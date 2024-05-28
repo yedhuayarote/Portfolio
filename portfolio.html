@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+    .container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+header nav .left a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .logo {
+    margin-right: 3rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.hero {
+background-color: black;
+color: aliceblue;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.hero .left img {
+  
+    width: 400px;
+  
+}
+
+.hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    color: white;
+    background-color: black;
+    margin-bottom: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero .right h1 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span :hover {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-centre {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: -15rem;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--secondary);
+}
+#name{
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+}
+footer{
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+    .fa {
+      size: 50cqmax;
+      background-color: rgb(212, 203, 203);
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+      background-color: rgb(232, 218, 218);
+    }
+    
+    /* Set a specific color for each brand */
+    
+    
+    /* Facebook */
+    .fa-facebook {
+    
+      background: #3B5998;
+      color: white;
+      size: 20cqw;
+    }
+    .fa-instagram{
+      background: #cc4444;
+      color: white;
+
+    }
+    .fa-whatsapp{
+      background: rgb(90, 143, 10);
+      color: white;
+    }
+
+    
+    /* Twitter */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    .fa-linkedin{
+      background: #55ACEE;
+      color: white;
+
+    }
+    .fa-youtube :hover{
+      background-color: rgb(87, 4, 4);
+    }
+    .text-center{
+      text-align: center;
+    }
+    
+
+    
+   
+  </style>
+</head>
+
+<body>
+ 
+  <header>  
+    <div class="container">  
+      <nav class="flex items-centre justify-between">  
+          <div class="left flex justfiy-right">  
+          <div class="logo">  
+            <img src="logo1.jpeg" width="50px" alt="logo">  
+          </div>  
+          <div>  
+            <a href="#">Home</a>  
+            <a href="https://drive.google.com/file/d/194DHZ09a4Jr_Q6ZEbKSvbNkOIdp0pNsC/view?usp=sharing">CV</a>  
+            <a href="#">About</a>  
+            <a href="#">Services</a>  
+            <a href="#" id="name">WebWorld</a>  
+            <a href="#">Skills</a>  
+            <a href="#">Blog</a></li>
+           
+          
+            
+              
+          </div>  
+        </div>  
+        <div class="right">  
+          <button class="btn btn-primary">Contact</button>  
+         
+        </div>  
+      </nav>
+    </div>  
+  </header>
+  <div class="hero flex items-centre justify-between">
+    <div class="left flex">
+      <img src="yedhu987.jpg" alt="Profile">
+      
+      
+    </div><br><br>
+
+      <div>
+    <br><br><div class="right flex-1">
+      <h6>Yedhu Krishnan</h6>
+      <h1>Hey I'm a Web <br> <span>Developer</span></h1>
+      <p>Hey techss, Welcome to my web world. This is a generation of Developers.I am a fresher in the Web world. i hope I can make something awesome for you.  We can make it together </p>
+      <div>
+        <button class="btn btn-secondary" href="https://wa.me/qr/Y3PRMP7GKF4DL1">Enter My chat </button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" >
+    
+    
+  </section>
+ 
+
+ 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Add font awesome icons -->
+  <a href="https://www.facebook.com/yadhukannan.ayarote?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="https://wa.me/qr/Y3PRMP7GKF4DL1" class="fa fa-whatsapp"></a>
+  <a href="https://www.instagram.com/yedhu_uuu?igsh=ZGVpdHVjd2I2M29j" class="fa fa-instagram"></a>
+  <a href="https://www.linkedin.com/in/yedhu-krishnan-67614b299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-youtube"></a>
+
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+   
+    <br>
+    <a class="text-reset fw-bold" href="yedhu01ayrt@gmail.com">yedhu01ayrt@gmail.com</a>
+    <br>
+    © Copyright: designed By YedhuKrishnan
+    <br>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+</div>
+</body>
+
+</html>
